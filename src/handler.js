@@ -109,19 +109,6 @@ const getAllBooksHandler = (request, h) => {
   };
 };
 
-// const getAllBooksByNameHandler = (request, h) => {
-//   const { name } = request.query;
-
-//   const books = Books.filter((b) => b.name.toLowerCase().includes(name.toLowerCase()));
-
-//   return {
-//     status: 'success',
-//     data: {
-//       books,
-//     },
-//   };
-// };
-
 const getBookByIdHandler = (request, h) => {
   const { bookId } = request.params;
 
@@ -237,7 +224,6 @@ const deleteBookByIdHanlder = (request, h) => {
 module.exports = { 
   addBookHandler,
   getAllBooksHandler,
-  // getAllBooksByNameHandler,
   getBookByIdHandler,
   editBookByIdHandler,
   deleteBookByIdHanlder,
